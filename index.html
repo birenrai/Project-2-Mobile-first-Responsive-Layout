@@ -5,87 +5,100 @@
     <meta charset="utf-8">
     <title> Birendra Rai Portfolio </title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel"stylesheet" href="css/style.css">
-    <meta name="Viewport" content="width=device-width", initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <header class="main-header">
+
+
+
+    <header class="main-header" id="top">
       <h2> Birendra Rai </h2>
-      <ul>
-        <li><a>Home</a></li>
-        <li><a>Portfolio</a></li>
-        <li><a>Contact</a></li>
-      </ul>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section>
+    <!-- <div class="body-wrap" -->
+    <div class="intro">
+      <img src="images/responsive-layout-profile.png" alt="Profile Picture">
       <p>Hi! I'm a front-end developer who loves responsive design and css. I recently
         finished learning front-end web development at Treehouse and I'm excited to put
         all my skills to use!</p>
-      <img src="images/responsive-layout-profile.png" alt="Profile Picture">
-    </section>
+    </div>
+    <div class="body-wrap">
+    <main class="portfolioSection">
+    <!-- <section class="portfolioSection"> -->
 
-    <section class="portfolioSection">
-      <h2>Portfolio</h2>
-      <div class="col">
-        <img src="images/portfolio-1.png" alt="portfolio-1">
+      <h2 id="portfolio">Portfolio</h2>
+      <section class="col">
+        <img src="images/portfolio-1.png" alt="portfolio-1" class="img">
         <h2>Marketing Page</h2>
         <p>This project shows the fromt page of a marketing website meant for specific
         business I'm interested in.</p>
-      </div>
+      </section>
 
-      <div class="col">
-        <img src="images/portfolio-2.png" alt="portfolio-2">
+      <section class="col">
+        <img src="images/portfolio-2.png" alt="portfolio-2" class="img">
         <h2>Search Page</h2>
         <p>This project searches through a specific database to find information that
         the user is trying to look up.</p>
-      </div>
+      </section>
 
-      <div class="col">
-        <img src="images/portfolio-3.png" alt="portfolio-3">
+      <section class="col">
+        <img src="images/portfolio-3.png" alt="portfolio-3" class="img">
         <h2>Travel Page</h2>
         <p>This project compares travel times based on different transportation methods
         and tell you the best one.</p>
-      </div>
+      </section>
 
-      <div class="col">
-        <img src="images/portfolio-4.png" alt="portfolio-4">
+      <section class="col">
+        <img src="images/portfolio-4.png" alt="portfolio-4" class="img">
         <h2>Map of Favorite Spots</h2>
         <p>This project uses mapping apis to plot points for my favorite spots in the
         city for a do-it-yourself walking tour.</p>
-      </div>
+      </section>
 
-      <div class="col">
-        <img src="images/portfolio-5.png" alt="portfolio-5">
+      <section class="col">
+        <img src="images/portfolio-5.png" alt="portfolio-5" class="img">
         <h2>Photo Gallery</h2>
         <p>This project shows pictures from a recent trip to the viewer and allows them
         to easily navigate through photos.</p>
-      </div>
+      </section>
 
-      <div class="col">
-        <img src="images/portfolio-6.png" alt="portfolio-6">
+      <section class="col">
+        <img src="images/portfolio-6.png" alt="portfolio-6" class="img">
         <h2>Calculator</h2>
         <p>Someone can enter in the numbers they want, and press the big blue button
         and get the result.</p>
-      </div>
-    </section>
+      </section>
+    </main>
+  </div>
 
-    <h2>Contact</h2>
+  <section class="bottom">
+    <h2 id="contact">Contact</h2>
     <p>If you're interested in chatting or want more information about what I've been
       working on, I'd love to hear from you!</p>
 
-      <p>Phone  <a href="tel: 301-908-8796">+1(301)-908-8796</a></p>
-      <p>Email  <a href="mailto:birenrai1010@gmail.com">birenrai1010@gmail.com</a></P>
+    <p>Phone  <a href="tel:301-908-8796">+1(301)-908-8796</a></p>
+    <p>Email  <a href="mailto:birenrai1010@gmail.com">birenrai1010@gmail.com</a></P>
+  </section>
 
-      <footer>
+      <footer class="main-footer">
         <h2> Birendra Rai </h2>
-        <ul>
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
+        <a href="#top" class="take-top">Back to top</a>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </footer>
-
   </body>
 </html>

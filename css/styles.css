@@ -1,0 +1,112 @@
+body {
+  background-color: lightgrey;
+}
+
+.main-header h2,
+.main-nav li{                   /*Centers headers*/
+  text-align: center;;
+}
+
+.main-nav ul,
+.footer-nav ul{
+  padding: 0;                    /*Removes list types and padding*/
+  list-style-type: none;
+}
+
+
+.main-nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: black;
+}
+
+.intro {
+  width: 75%;
+  margin: 30px auto 0;
+}
+
+.intro p {
+  margin: 15px -30px;
+}
+
+.intro img,
+.portfolioSection img{
+  width: 100%;
+}
+
+p,
+.portfolioSection {
+  text-align: center;
+}
+
+/* .portfolioSection {
+  width:
+} */
+.main-nav ul {
+  width: 95%;
+  margin: 10px auto;
+}
+
+.main-nav li {
+  background-color: white;
+  text-transform: uppercase;
+  display: block;
+  margin: 5px 0;
+  padding: 10px 0;
+}
+
+/* #portfolio {
+
+} */
+#portfolio {
+  background-color: lightblue;
+  padding: 15px 25px 25px;
+  margin: 0 auto;
+}
+.col {
+  background-color: lightblue;
+  padding: 15px 25px;
+}
+
+.bottom {
+  text-align: center;
+  padding: 15px 25px 25px;
+}
+.main-footer {
+  margin: 15px 25px 25px;
+  border-top: solid 2px grey;
+}
+
+.main-footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+/* .main-footer h2,
+.take-top {
+  display: inline-block;;
+} */
+
+.main-footer h2{
+  float: left;
+}
+
+.take-top {
+  float: right;
+  padding-top: 25px;
+}
+
+.footer-nav {
+  display: none;
+}
+
+
+@media (mix-width: 768px) {
+
+}
