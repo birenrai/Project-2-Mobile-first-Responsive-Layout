@@ -4,7 +4,7 @@ body {
 
 .main-header h2,
 .main-nav li{                   /*Centers headers*/
-  text-align: center;;
+  text-align: center;
 }
 
 .main-nav ul,
@@ -107,6 +107,50 @@ p,
 }
 
 
-@media (mix-width: 768px) {
+@media (min-width: 768px) {
+  .portfolioSection {
+    width: 90%;
+  }
+  .main-nav li{
+    display: inline-block;
+    background-color: lightgrey;
+    margin: 0 5px;
+  }
+  .main-nav ul{
+    text-align: center;
+  }
+
+  .intro {
+    width: 90%;
+  }
+  .intro p {
+    float: left;
+    width: 50%;
+  }
+
+  .intro img {
+    float: right;
+    width: 50%;
+  }
+
+  .col-left-1,
+  .col-left-2,
+  .col-left-3{
+    float: left;
+    width: 50%;
+  }
+
+  .col-right-1,
+  .col-right-2,
+  .col-right-3{
+    float: right;
+    width: 50%;
+  }
+
+  .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 }
