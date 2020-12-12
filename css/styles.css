@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
   text-align: center;
-  /* border: solid 1px red; */
+  font-family: Ubuntu;
 }
 
 body {
@@ -10,6 +10,23 @@ body {
 }
 img {
   width: 100%;
+}
+
+.main-header h2,
+.main-nav li,
+#portfolio,
+#phone,
+#email,
+.main-footer h2,
+.footer-nav li {
+  font-weight: bolder;
+}
+
+.main-nav a,
+#portfolio,
+#contact,
+.footer-nav a{
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -31,7 +48,6 @@ img {
 
 .main-nav li {
   background-color: white;
-  text-transform: uppercase;
   display: block;
   margin: 5px 0;
   padding: 10px 0;
@@ -60,19 +76,16 @@ img {
 }
 
 /* #portfolio */
-
-/* p,
 .portfolioSection {
-  text-align: center;
-} */
+  background-color: LightSteelBlue;
+}
 
 #portfolio {
-  background-color: LightSteelBlue;
   padding: 15px 25px 25px;
   margin: 0 auto;
 }
 .col {
-  background-color: LightSteelBlue;
+  /* background-color: LightSteelBlue; */
   padding: 15px 25px;
 }
 
@@ -96,7 +109,6 @@ img {
 }
 
 .main-footer a {
-  text-transform: uppercase;
   text-decoration: none;
   color: black;
 }
@@ -118,57 +130,54 @@ img {
 
   /* Header */
 
-  .main-header {
-    width: 95%;
-    margin: auto;
-  }
-
-  .main-header h2{
-    float: left;
-    display: inline-block;
-    padding-left: 10px;
-  }
-
-  .main-nav ul {
-    margin: 30px 0 0 35px;
-    padding-top: 15px;
+  .main-header h2,
+  .main-nav li{                   /*Centers headers*/
+    text-align: center;
   }
 
   .main-nav li {
     display: inline-block;
+    margin: auto 10px;
     background-color: lightgrey;
-    margin: 0 10px;
-    float: right;
   }
 
 /* Intro */
 
   .intro {
     width: 90%;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 
   .intro p {
-    width: 60%;
+    width: 55%;
     float: left;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 0;
   }
 
   .intro img {
-    width: 40%;
+    width: 45%;
     float: right;
     margin-top: 40px;
   }
 
   /* Portfolio */
+  .portfolioSection {
+    width: 100%;
+    background-color: LightSteelBlue;
+    padding-left: 30px;
+    padding-right: 25px;
+  }
 
+  #portfolio {
+    padding-top: 50px;
+    margin: 25px auto;
+  }
   .col{
     float: left;
     width: 50%;
-    /* padding-left: 50px;
-    padding-right: 50px; */
-    padding: 15px 50px
+    padding: 15px 10px;
+    display: table;
   }
 
   .col p{
@@ -191,11 +200,12 @@ img {
   .footer-nav {
     display: block;
     float: right;
+    margin-top: 10px;
   }
 
   .footer-nav li {
     float: left;
-    margin: 0 10px;
+    margin-left: 30px;
   }
 
   .clearfix::after {
@@ -206,9 +216,50 @@ img {
 }
 
 @media (min-width: 1024px) {
+  /* Header */
+
+  .main-header {
+    width: 95%;
+    margin: auto;
+  }
+
+  .main-header h2{
+    float: left;
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .main-nav ul {
+    margin: 30px 0 0 35px;
+  }
+
+  .main-nav {
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    background-color: lightgrey;
+    margin-left: 30px;
+    float: left;
+  }
+
+  /* Intro */
+
+  .intro p {
+    font-size: 2em;
+  }
+
+  /* Portfolio Section */
+  .portfolioSection {
+    width: 95%;
+    margin: 0 auto;
+    background-color: LightSteelBlue;
+  }
   .col{
     float: left;
-    width: 33%;
+    width: 33.3%;
   }
 
   .col p{
